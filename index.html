@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mawa-Search Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="mawa.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Mawa-search algorithm visualization</h1>
+
+    <section class="panel">
+        <div class="slider">
+            <label for="speed"><b>Speed</b></label>
+            <br>
+
+            <span>Slow</span>
+            <input id="speed" type="range" min="0" max="100" value="50" step="1">
+            <span>Fast</span>
+        </div>
+
+        <div class="monitored-values">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>l</th>
+                        <th>m</th>
+                        <th>r</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="complexity">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Elements:</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Steps:</th>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="input">
+            <div class="start">
+                <input type="text" value="[33, 55, 3, 4, 77, 6, 13, 21, 0, 3, 56, 14, 7, 8]" id="array">
+                <button type="button" onclick="startSimulation()">Start Simulation</button>
+            </div>
+            <div class="search">
+                <label for="search">Search for:</label>
+                <input type="text" value="7" id="search">
+            </div>
+        </div>
+    </section>
+
+    <section class="display"></section>
+
+    <footer></footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

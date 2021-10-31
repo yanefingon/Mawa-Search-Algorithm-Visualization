@@ -1,0 +1,141 @@
+body {
+    background: url("foggy_background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #304f08;
+}
+
+title {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color:rgb(49, 56, 60);
+    margin-top: 0;
+}
+
+.panel {
+    display: grid;
+    height: 10vh;
+    width: 100%;
+    top: 5vh;
+    grid-template: 100% / 5fr repeat(3, 4fr) repeat(16, 1fr);
+    position: sticky;
+}
+
+.slider {
+    grid-column: 1 / 2;
+    text-align: center;
+}
+
+.monitored-values {
+    grid-column: 4 / 5;
+    visibility: hidden;
+}
+
+.complexity {
+    grid-column: 10 / 13;
+    visibility: hidden;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #d7e3ee;
+    text-align: center;
+    padding: 8px;
+    min-width: 2.5vw;
+}
+
+td:nth-child(odd), th:nth-child(odd) {
+    color:rgb(99, 154, 57);
+}
+
+td:nth-child(even), th:nth-child(even) {
+    color:rgb(69, 109, 28);
+}
+
+.input {
+    grid-column: 15 / 21;
+    display: flex;
+    flex-flow: column;
+    align-items: space-around;
+}
+
+.start {
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+}
+
+#array {
+    width: 40%;
+    margin-left: 1em;
+}
+
+button {
+    min-width: 25%;
+    background-color: rgb(146, 190, 147);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#search {
+    width: 8%;
+    margin-left: 0.5em;
+}
+
+.display {
+    margin-left: 30vw;
+}
+
+/* a row */
+.display div{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.display div div {
+    min-width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #d7e3ee;
+}
+
+.r {
+    background-color: rgb(138, 221, 29);
+    font-weight: bold;
+}
+
+.l {
+    background-color: rgb(189, 231, 49);
+    font-weight: bold;
+}
+
+.m {
+    background-color: rgb(70, 126, 44);
+    font-weight: bold;
+}
+
+footer {
+    height: 95vh;
+}
