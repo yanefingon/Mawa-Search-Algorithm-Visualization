@@ -154,7 +154,7 @@ const mawaSearch = async(array, i, l, r) => {
         {
             array.splice(m, 1); // remove the middle element
 
-            if (m == 0) 
+            if (m == 0 || l > r) 
             {
                 if (array.length)
                 {
